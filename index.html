@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===================== SEO META TAGS ===================== -->
+  <title data-i18n="meta_title">Eco Glamping Burabay — Глэмпинг на озере Щучье, Боровое</title>
+  <meta name="description" data-i18n-attr="content:meta_description" content="Eco Glamping Burabay — уютные барнхаусы и глэмпинг на юго-западном берегу озера Щучье: ресторан грузинской кухни, дровяная баня с купелью, пляж и активный отдых в Боровом.">
+  <meta name="keywords" content="глэмпинг Бурабай, Eco Glamping Burabay, глэмпинг Щучье, глэмпинг Боровое, баня с купелью, барнхаус Бурабай, glamping Burabay">
+  <meta name="author" content="Eco Glamping Burabay">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Eco Glamping Burabay — Глэмпинг на озере Щучье, Боровое">
+  <meta property="og:description" content="Стильные барнхаусы и сафари-тенты в лесу на берегу озера Щучье. Баня на дровах с купелью, грузинский ресторан, пляж.">
+  <meta property="og:image" content="images/cabin-sunset-porch.jpg">
+  <meta property="og:locale" content="ru_RU">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Fonts: Playfair Display (display serif, supports Cyrillic + Kazakh extended characters) + Montserrat (body/UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image for a faster first paint -->
+  <link rel="preload" as="image" href="images/cabin-sunset-porch.jpg" fetchpriority="high">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-mark">
+      <img src="assets/logo.png" alt="" class="loader-logo">
+      <div class="loader-line"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">
+        <img src="assets/logo.png" alt="Eco Glamping Burabay" class="brand-logo">
+        <span class="brand-text">
+          <strong>ECO GLAMPING</strong>
+          <em>BURABAY</em>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about" data-i18n="nav_about">О нас</a></li>
+          <li><a href="#accommodation" data-i18n="nav_accommodation">Проживание</a></li>
+          <li><a href="#amenities" data-i18n="nav_amenities">Удобства</a></li>
+          <li><a href="#gallery" data-i18n="nav_gallery">Галерея</a></li>
+          <li><a href="#why-us" data-i18n="nav_why">Почему мы</a></li>
+          <li><a href="#faq" data-i18n="nav_faq">Вопросы</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Контакты</a></li>
+        </ul>
+        <a href="https://wa.me/77777770626" target="_blank" rel="noopener" class="btn btn-primary nav-cta" data-i18n="nav_book">Забронировать</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switch" id="langSwitch" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn" data-lang="ru">RU</button>
+          <button type="button" class="lang-btn" data-lang="kk">KZ</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero-media">
+        <img src="images/cabin-sunset-porch.jpg" alt="Eco Glamping Burabay — барнхаус на закате" class="hero-img" fetchpriority="high">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content container">
+        <p class="eyebrow" data-i18n="hero_eyebrow">оз. Щучье · Боровое · Казахстан</p>
+        <h1 data-i18n="hero_title">Тишина леса.<br>Тепло дерева.<br>Свет озера.</h1>
+        <p class="hero-sub" data-i18n="hero_subtitle">Eco Glamping Burabay — барнхаусы и сафари-тенты на юго-западном берегу озера Щучье, баня на дровах и грузинский ресторан среди сосен.</p>
+        <div class="hero-actions">
+          <a href="#accommodation" class="btn btn-primary" data-i18n="hero_cta_primary">Смотреть домики</a>
+          <a href="https://wa.me/77777770626" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="hero_cta_secondary">Написать в WhatsApp</a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- Signature horizon/sun divider -->
+    <div class="horizon-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <circle class="horizon-sun" cx="720" cy="70" r="26"></circle>
+        <path class="horizon-line" d="M0,55 C 240,20 480,75 720,45 C 960,15 1200,70 1440,40" fill="none"></path>
+      </svg>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="images/hammock-territory.jpg" alt="Территория Eco Glamping Burabay" class="about-img about-img-1" loading="lazy">
+          <img src="images/lake-waves.jpg" alt="Озеро Щучье" class="about-img about-img-2" loading="lazy">
+        </div>
+        <div class="about-text">
+          <p class="eyebrow" data-i18n="about_eyebrow">О месте</p>
+          <h2 data-i18n="about_title">Маленькое лесное убежище на берегу Щучьего</h2>
+          <p data-i18n="about_p1">Eco Glamping Burabay — база отдыха на юго-западном берегу озера Щучье, рядом с Бурабаем и Щучинском. Мы построили коллекцию стильных барнхаусов и сафари-тентов среди сосен, чтобы гости могли сочетать комфорт с настоящей природой.</p>
+          <p data-i18n="about_p2">На территории — баня на дровах с купелью, грузинский ресторан, летняя терраса под зонтиками, мангальные зоны и выход к озеру для купания и рыбалки. Кухня работает до 22:00, а сама база — круглосуточно.</p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label" data-i18n="about_stat1">типа домиков</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">24/7</span>
+              <span class="stat-label" data-i18n="about_stat2">территория открыта</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">30k+</span>
+              <span class="stat-label" data-i18n="about_stat3">подписчиков в Instagram</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ACCOMMODATION ===================== -->
+    <section class="accommodation" id="accommodation">
+      <div class="container">
+        <p class="eyebrow center" data-i18n="acc_eyebrow">Проживание</p>
+        <h2 class="section-title center" data-i18n="acc_title">Выберите свой домик среди сосен</h2>
+        <p class="section-sub center" data-i18n="acc_subtitle">Барнхаусы с панорамными окнами и сафари-тенты — для пар, семей и небольших компаний.</p>
+
+        <div class="acc-grid">
+
+          <!-- Card 1 -->
+          <article class="acc-card">
+            <div class="acc-card-img">
+              <img src="images/cabin-winter-porch.jpg" alt="2-местный барнхаус с видом на лес">
+              <span class="acc-badge" data-i18n="acc_badge_forest">Вид на лес</span>
+            </div>
+            <div class="acc-card-body">
+              <h3 data-i18n="acc1_title">2-местный барнхаус</h3>
+              <p class="acc-meta">11 м² · <span data-i18n="acc1_guests">2 гостя</span></p>
+              <p data-i18n="acc1_desc">[Описание домика] Уютный барнхаус с террасой, двуспальной кроватью и панорамным окном в лес.</p>
+              <div class="acc-price-table">
+                <div class="acc-price-row"><span data-i18n="price_weekday">вс–пт</span><strong>45 000 ₸ / <span data-i18n="price_night">сутки</span></strong></div>
+                <div class="acc-price-row"><span data-i18n="price_weekend">сб и праздничные дни</span><strong>65 000 ₸ / <span data-i18n="price_night">сутки</span></strong></div>
+              </div>
+              <a href="https://wa.me/77777770626" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="acc_cta">Забронировать</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="acc-card featured">
+            <div class="acc-card-img">
+              <img src="images/barnhouse-exterior-autumn.jpg" alt="4-местный барнхаус с видом на лес">
+              <span class="acc-badge" data-i18n="acc_badge_forest">Вид на лес</span>
+            </div>
+            <div class="acc-card-body">
+              <h3 data-i18n="acc2_title">4-местный барнхаус</h3>
+              <p class="acc-meta">22 м² · <span data-i18n="acc2_guests">4 гостя</span></p>
+              <p data-i18n="acc2_desc">[Описание домика] Просторный барнхаус с раскладным диваном, мини-баром и собственной чайной станцией.</p>
+              <div class="acc-price-table">
+                <div class="acc-price-row"><span data-i18n="price_weekday">вс–пт</span><strong>65 000 ₸ / <span data-i18n="price_night">сутки</span></strong></div>
+                <div class="acc-price-row"><span data-i18n="price_weekend">сб и праздничные дни</span><strong>85 000 ₸ / <span data-i18n="price_night">сутки</span></strong></div>
+              </div>
+              <a href="https://wa.me/77777770626" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="acc_cta">Забронировать</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="acc-card">
+            <div class="acc-card-img">
+              <img src="images/bedroom-lake-view.jpg" alt="2-местный барнхаус с видом на озеро">
+              <span class="acc-badge acc-badge-lake" data-i18n="acc_badge_lake">Вид на озеро</span>
+            </div>
+            <div class="acc-card-body">
+              <h3 data-i18n="acc3_title">2-местный барнхаус</h3>
+              <p class="acc-meta">11 м² · <span data-i18n="acc3_guests">2 гостя</span></p>
+              <p data-i18n="acc3_desc">[Описание домика] Барнхаус с видом на озеро Щучье прямо из окна — идеален для рассветов и закатов.</p>
+              <div class="acc-price-table">
+                <div class="acc-price-row"><span data-i18n="price_weekday">вс–пт</span><strong>55 000 ₸ / <span data-i18n="price_night">сутки</span></strong></div>
+                <div class="acc-price-row"><span data-i18n="price_weekend">сб и праздничные дни</span><strong>75 000 ₸ / <span data-i18n="price_night">сутки</span></strong></div>
+              </div>
+              <a href="https://wa.me/77777770626" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="acc_cta">Забронировать</a>
+            </div>
+          </article>
+
+          <!-- Card 4: Safari tent -->
+          <article class="acc-card">
+            <div class="acc-card-img">
+              <img src="images/safari-tent-exterior-day.jpg" alt="Сафари-тент с видом на лес">
+              <span class="acc-badge" data-i18n="acc_badge_forest">Вид на лес</span>
+            </div>
+            <div class="acc-card-body">
+              <h3 data-i18n="acc4_title">Сафари-тент</h3>
+              <p class="acc-meta"><span data-i18n="acc4_guests">до 5 гостей</span></p>
+              <p data-i18n="acc4_desc">Спальные места на 5 человек, обеденный стол, постельное бельё и полный гигиенический набор.</p>
+              <div class="acc-price-table">
+                <div class="acc-price-row"><span data-i18n="price_weekday">вс–пт</span><strong>45 000 ₸ / <span data-i18n="price_night">сутки</span></strong></div>
+                <div class="acc-price-row"><span data-i18n="price_weekend">сб и праздничные дни</span><strong>55 000 ₸ / <span data-i18n="price_night">сутки</span></strong></div>
+              </div>
+              <a href="https://wa.me/77777770626" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="acc_cta">Забронировать</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="acc-note" data-i18n="acc_note">Завтраки и пользование мангальной зоной включены в стоимость проживания.</p>
+
+        <!-- Banya price block -->
+        <div class="banya-block">
+          <div class="banya-media">
+            <img src="images/pricing-banya.png" alt="Баня на дровах с купелью — прайс" loading="lazy">
+          </div>
+          <div class="banya-info">
+            <p class="eyebrow" data-i18n="banya_eyebrow">Отдельно</p>
+            <h3 data-i18n="banya_title">Баня на дровах без чана</h3>
+            <div class="banya-price-table">
+              <div class="acc-price-row"><span data-i18n="price_weekday_short">будние дни</span><strong>8 000 ₸ / <span data-i18n="price_hour">час</span></strong></div>
+              <div class="acc-price-row"><span data-i18n="price_weekend_short">выходные</span><strong>10 000 ₸ / <span data-i18n="price_hour">час</span></strong></div>
+            </div>
+            <ul class="banya-list">
+              <li data-i18n="banya_li1">Минимальная аренда — 2 часа</li>
+              <li data-i18n="banya_li2">Максимальная вместимость — 6 человек</li>
+              <li data-i18n="banya_li3">Парная рассчитана на 4 человек</li>
+            </ul>
+            <a href="https://wa.me/77777770626" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="acc_cta">Забронировать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="horizon-divider flip" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <circle class="horizon-sun" cx="500" cy="20" r="20"></circle>
+        <path class="horizon-line" d="M0,30 C 240,60 480,10 720,40 C 960,65 1200,15 1440,45" fill="none"></path>
+      </svg>
+    </div>
+
+    <!-- ===================== AMENITIES ===================== -->
+    <section class="amenities" id="amenities">
+      <div class="container">
+        <p class="eyebrow center" data-i18n="amenities_eyebrow">Удобства</p>
+        <h2 class="section-title center" data-i18n="amenities_title">Всё для комфортного отдыха на природе</h2>
+
+        <div class="amenities-grid">
+          <div class="amenity">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5a16 16 0 0 1 20 0"/><path d="M5.5 12.5a11 11 0 0 1 13 0"/><path d="M9 16.5a6 6 0 0 1 6 0"/><circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3 data-i18n="amenity1_title">Wi-Fi</h3>
+            <p data-i18n="amenity1_desc">Бесплатный Wi-Fi для гостей на всей территории.</p>
+          </div>
+          <div class="amenity">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7a2 2 0 0 0 2 2v11"/><path d="M5 2v9"/><path d="M7 2v9"/><path d="M18 2c-1.7 0-3 1.8-3 4.5S16.3 11 18 11v11"/></svg>
+            </div>
+            <h3 data-i18n="amenity2_title">Грузинский ресторан</h3>
+            <p data-i18n="amenity2_desc">Кафе грузинской кухни на территории, кухня работает до 22:00.</p>
+          </div>
+          <div class="amenity">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 2.4 3 4.4 3 6.3a3 3 0 0 1-6 0C9 7.4 10 5.4 12 3Z"/><path d="M5 21c1-1.2 1-2.8 0-4M12 21c1-1.2 1-2.8 0-4M19 21c1-1.2 1-2.8 0-4"/></svg>
+            </div>
+            <h3 data-i18n="amenity3_title">Баня и купель</h3>
+            <p data-i18n="amenity3_desc">Дровяная русская баня с парной и купелью, полотенца и гигиенические принадлежности.</p>
+          </div>
+          <div class="amenity">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c2 3 4 5 4 8a4 4 0 0 1-8 0c0-1 .3-2 1-3 .2 1 .8 1.5 1.5 1.5C10 7 10 4 12 2Z"/><path d="M6 21a6 6 0 0 1 12 0"/></svg>
+            </div>
+            <h3 data-i18n="amenity4_title">Мангальная зона</h3>
+            <p data-i18n="amenity4_desc">Зоны с мангалом и дровами — включены в стоимость проживания.</p>
+          </div>
+          <div class="amenity">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13"/><rect x="2" y="13" width="20" height="6" rx="1.5"/><circle cx="7" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/></svg>
+            </div>
+            <h3 data-i18n="amenity5_title">Парковка</h3>
+            <p data-i18n="amenity5_desc">Бесплатная парковка для гостей на территории базы.</p>
+          </div>
+          <div class="amenity">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9Z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3c-.5 1 .5 1.5 0 3M12 3c-.5 1 .5 1.5 0 3"/></svg>
+            </div>
+            <h3 data-i18n="amenity6_title">Завтрак включён</h3>
+            <p data-i18n="amenity6_desc">Завтрак включён в стоимость для гостей барнхаусов и тентов.</p>
+          </div>
+          <div class="amenity">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13c4-5 14-6 18-1-4 5-14 4-18-1Z"/><path d="M17 9v8"/><circle cx="7" cy="12.5" r=".6" fill="currentColor" stroke="none"/></svg>
+            </div>
+            <h3 data-i18n="amenity7_title">Озеро и рыбалка</h3>
+            <p data-i18n="amenity7_desc">Прямой выход к озеру Щучье — купание и рыбалка рядом с домиком.</p>
+          </div>
+          <div class="amenity">
+            <div class="amenity-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 0 1 9 9H3a9 9 0 0 1 9-9Z"/><path d="M12 12v7a2 2 0 0 1-4 0"/><path d="M12 3v2"/></svg>
+            </div>
+            <h3 data-i18n="amenity8_title">Летняя терраса</h3>
+            <p data-i18n="amenity8_desc">Терраса под зонтиками для отдыха и приёма пищи на свежем воздухе.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <p class="eyebrow center" data-i18n="gallery_eyebrow">Галерея</p>
+        <h2 class="section-title center" data-i18n="gallery_title">Место, где хочется остаться дольше</h2>
+
+        <div class="gallery-grid">
+          <div class="gallery-item gi-large"><img src="images/cabin-sunset-porch.jpg" alt="Барнхаус на закате" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/lake-waves.jpg" alt="Озеро Щучье" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/tent-night-glow.jpg" alt="Сафари-тент ночью" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/bedroom-winter-view.jpg" alt="Спальня с видом на снег" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/territory-winter-snow.jpg" alt="Территория зимой" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/cabin-summer-swing.jpg" alt="Домик летом с качелями" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/terrace-umbrellas.jpg" alt="Летняя терраса под зонтиками" loading="lazy"></div>
+          <div class="gallery-item"><img src="images/restaurant-khinkali.jpg" alt="Грузинская кухня — хинкали" loading="lazy"></div>
+          <div class="gallery-item gi-large"><img src="images/hammock-territory.jpg" alt="Гамак на территории" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE US ===================== -->
+    <section class="why-us" id="why-us">
+      <div class="container why-grid">
+        <div class="why-text">
+          <p class="eyebrow" data-i18n="why_eyebrow">Почему мы</p>
+          <h2 data-i18n="why_title">Природа и комфорт в одном месте</h2>
+
+          <ul class="why-list">
+            <li>
+              <span class="why-num">01</span>
+              <div>
+                <h3 data-i18n="why1_title">Прямой берег озера</h3>
+                <p data-i18n="why1_desc">Территория расположена на юго-западном берегу озера Щучье — до воды несколько шагов.</p>
+              </div>
+            </li>
+            <li>
+              <span class="why-num">02</span>
+              <div>
+                <h3 data-i18n="why2_title">Настоящая баня на дровах</h3>
+                <p data-i18n="why2_desc">Русская парная и купель — классический ритуал отдыха после дня на природе.</p>
+              </div>
+            </li>
+            <li>
+              <span class="why-num">03</span>
+              <div>
+                <h3 data-i18n="why3_title">Грузинская кухня на территории</h3>
+                <p data-i18n="why3_desc">Не нужно никуда ехать за ужином — ресторан работает прямо на базе.</p>
+              </div>
+            </li>
+            <li>
+              <span class="why-num">04</span>
+              <div>
+                <h3 data-i18n="why4_title">Приватные барнхаусы</h3>
+                <p data-i18n="why4_desc">Каждый домик спрятан среди сосен — тишина и приватность вместо шумного кемпинга.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="why-media">
+          <img src="images/barnhouse-amenities.jpg" alt="Оснащение барнхаусов Eco Glamping Burabay" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq" id="faq">
+      <div class="container faq-container">
+        <p class="eyebrow center" data-i18n="faq_eyebrow">Вопросы</p>
+        <h2 class="section-title center" data-i18n="faq_title">Часто задаваемые вопросы</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq1_q">Как добраться до Eco Glamping Burabay?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq1_a">Мы находимся на юго-западном берегу озера Щучье, 2а, рядом со Щучинском, Акмолинская область. Точный маршрут можно посмотреть на карте ниже или в 2GIS.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq2_q">Что входит в стоимость проживания?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq2_a">Завтраки и пользование мангальной зоной включены в стоимость проживания во всех барнхаусах и сафари-тентах.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq3_q">Можно ли забронировать баню отдельно?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq3_a">Да, баня на дровах без чана бронируется отдельно, минимальная аренда — 2 часа, вместимость до 6 человек.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq4_q">До какого времени работает ресторан?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq4_a">Кухня грузинского ресторана на территории работает до 22:00. Сама база отдыха открыта круглосуточно.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span data-i18n="faq5_q">Как забронировать домик?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq5_a">Проще всего написать нам в WhatsApp или Instagram, либо позвонить по указанному номеру телефона.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA (WhatsApp) ===================== -->
+    <section class="cta" id="cta">
+      <div class="cta-media">
+        <img src="images/cabin-sunset-porch.jpg" alt="Eco Glamping Burabay" class="cta-img" loading="lazy">
+        <div class="cta-overlay"></div>
+      </div>
+      <div class="container cta-content">
+        <h2 data-i18n="cta_title">Готовы к следующему отдыху?</h2>
+        <a href="https://wa.me/77777770626" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.4 8.4 0 0 1-4-1L3 20l1.1-3.5a8.4 8.4 0 0 1-1.1-4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+          <span data-i18n="cta_button">Написать в WhatsApp</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact">
+      <div class="container contact-single">
+        <div class="contact-info">
+          <p class="eyebrow" data-i18n="contact_eyebrow">Контакты</p>
+          <h2 data-i18n="contact_title">Свяжитесь с нами</h2>
+          <p class="contact-lead" data-i18n="contact_lead">Напишите нам напрямую в WhatsApp или Instagram, позвоните — или найдите нас на карте.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.58 7-12A7 7 0 1 0 5 9c0 4.42 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+              </span>
+              <div>
+                <strong data-i18n="contact_address_label">Адрес</strong>
+                <p>Юго-западный берег озера Щучье, 2а, Щучинск, Акмолинская область, 021700, Казахстан</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .56 3.5 1 1 0 0 1-.25 1Z"/></svg>
+              </span>
+              <div>
+                <strong data-i18n="contact_phone_label">Телефон</strong>
+                <p><a href="tel:+77777770626">+7 777 777 06 26</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.4 8.4 0 0 1-4-1L3 20l1.1-3.5a8.4 8.4 0 0 1-1.1-4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+              </span>
+              <div>
+                <strong data-i18n="contact_whatsapp_label">WhatsApp</strong>
+                <p><a href="https://wa.me/77777770626" target="_blank" rel="noopener">+7 777 777 06 26</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <div>
+                <strong data-i18n="contact_instagram_label">Instagram</strong>
+                <p><a href="https://www.instagram.com/eco_glamping_burabay" target="_blank" rel="noopener">@eco_glamping_burabay</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 3.2"/></svg>
+              </span>
+              <div>
+                <strong data-i18n="contact_hours_label">Режим работы</strong>
+                <p data-i18n="contact_hours_value">Территория — круглосуточно, ресторан — до 22:00</p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- 2GIS map card: the business is not listed on Google Maps, so we link out to 2GIS -->
+          <div class="contact-map">
+            <img src="images/location-map.jpg" alt="Eco Glamping Burabay на карте 2GIS" class="contact-map-img" loading="lazy">
+            <div class="contact-map-overlay">
+              <a href="https://go.2gis.com/hpFbO" target="_blank" rel="noopener" class="btn btn-primary map-btn">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg>
+                <span data-i18n="map_2gis_btn">Открыть в 2GIS</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Eco Glamping Burabay" class="footer-logo">
+        <p data-i18n="footer_tagline">Глэмпинг и барнхаусы на озере Щучье, Боровое</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about" data-i18n="nav_about">О нас</a>
+        <a href="#accommodation" data-i18n="nav_accommodation">Проживание</a>
+        <a href="#amenities" data-i18n="nav_amenities">Удобства</a>
+        <a href="#gallery" data-i18n="nav_gallery">Галерея</a>
+        <a href="#faq" data-i18n="nav_faq">Вопросы</a>
+        <a href="#contact" data-i18n="nav_contact">Контакты</a>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/eco_glamping_burabay" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://wa.me/77777770626" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+        <a href="tel:+77777770626" aria-label="Phone">+7 777 777 06 26</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Eco Glamping Burabay. <span data-i18n="footer_rights">Все права защищены.</span></p>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOATING BUTTONS ===================== -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/77777770626" target="_blank" rel="noopener" class="fab fab-whatsapp" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.51 2 12.04 2Zm5.76 14.15c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.14.07-1.84-.12-.42-.12-.97-.31-1.66-.61-2.93-1.27-4.84-4.24-4.99-4.44-.15-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.43.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2.02.9 2.17.07.15.12.32.02.51-.1.19-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2.01 1.11.99 2.05 1.3 2.34 1.45.29.15.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.39-.24.65-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.12.07.71-.17 1.39Z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/eco_glamping_burabay" target="_blank" rel="noopener" class="fab fab-instagram" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.55.22.95.47 1.37.89.42.42.67.82.89 1.37.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.55-.47.95-.89 1.37-.42.42-.82.67-1.37.89-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.55-.22-.95-.47-1.37-.89-.42-.42-.67-.82-.89-1.37-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.55.47-.95.89-1.37.42-.42.82-.67 1.37-.89.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.39C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.39 2.13.67.67 1.34 1.08 2.13 1.39.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.39.67-.67 1.08-1.34 1.39-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.39-2.13C21.32 1.35 20.65.94 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84Zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4Zm6.41-10.4a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44Z"/></svg>
+    </a>
+    <a href="tel:+77777770626" class="fab fab-phone" aria-label="Call us">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.3 11.3 0 0 0 3.53.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.3 11.3 0 0 0 .56 3.53 1 1 0 0 1-.25 1.02Z"/></svg>
+    </a>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
